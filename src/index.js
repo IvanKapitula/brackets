@@ -30,6 +30,16 @@ module.exports = function check(str, bracketsConfig) {
       }
     }
   }
+ /*  Comment */
+  if(strArray.join('') !== ''){
+    for(let k = 0; k < arr.length;k++){
+      for(let i = 0; i < strArray.length;i++){
+        if(strArray.join('').indexOf(arr[k]) !== -1){
+          strArray.splice(strArray.join('').indexOf(arr[k]),2)
+        }
+      }
+    }
+  }
   if(strArray.join('') !== ''){
     for(let k = 0; k < arr.length;k++){
       for(let i = 0; i < strArray.length;i++){
